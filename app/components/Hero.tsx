@@ -4,7 +4,7 @@ import Link from "next/link";
 import { cruiseData } from "@/data/cruise-data";
 
 export default function Hero() {
-    const { ctaText, cruiseLine, departureDate, duration, description, mobileDescription, videoSources, mobileVideoSrc } = cruiseData.hero;
+    const { ctaText, cruiseLine, departureDate, duration, description, mobileDescription, videoSources, mobileVideoSources } = cruiseData.hero;
 
     return (
         <div id="hero">
@@ -31,7 +31,9 @@ export default function Hero() {
                             playsInline
                             className="absolute inset-0 w-full h-full object-cover"
                         >
-                            <source src={mobileVideoSrc || videoSources[videoSources.length - 1]?.src} type="video/mp4" />
+                            {(mobileVideoSources || videoSources).map((source) => (
+                                <source key={source.src} src={source.src} type={source.type} />
+                            ))}
                         </video>
                     </div>
                 </div>

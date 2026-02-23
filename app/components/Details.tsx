@@ -10,10 +10,12 @@ import { useEffect, useRef } from "react";
 import { cruiseData } from "@/data/cruise-data";
 
 export default function Details() {
-    const { title, specs, youtube } = cruiseData.details;
+    const { title, specs, youtube, videoSources, mobileVideoSources } = cruiseData.details;
     const playerRef = useRef<YT.Player | null>(null);
 
     useEffect(() => {
+        if (videoSources) return;
+
         const initPlayer = () => {
             new window.YT.Player("details-yt-player", {
                 width: "100%",
@@ -100,9 +102,42 @@ export default function Details() {
                         </div>
 
                         <div className="order-1 md:order-none relative">
-                            <div className="overflow-hidden shadow-md md:shadow-2xl md:border md:border-gray-200 bg-gray-100 aspect-video relative">
-                                <div id="details-yt-player" className="absolute inset-0 w-full h-full" />
-                            </div>
+                            {/* Mobile: local video */}
+                            {mobileVideoSources && (
+                                <div className="md:hidden overflow-hidden shadow-md bg-gray-100 aspect-video relative">
+                                    <video
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    >
+                                        {mobileVideoSources.map((source) => (
+                                            <source key={source.src} src={source.src} type={source.type} />
+                                        ))}
+                                    </video>
+                                </div>
+                            )}
+                            {/* Desktop: local video or YouTube fallback */}
+                            {videoSources ? (
+                                <div className={`${mobileVideoSources ? "hidden md:block" : ""} overflow-hidden shadow-md md:shadow-2xl md:border md:border-gray-200 bg-gray-100 aspect-video relative`}>
+                                    <video
+                                        autoPlay
+                                        muted
+                                        loop
+                                        playsInline
+                                        className="absolute inset-0 w-full h-full object-cover"
+                                    >
+                                        {videoSources.map((source) => (
+                                            <source key={source.src} src={source.src} type={source.type} />
+                                        ))}
+                                    </video>
+                                </div>
+                            ) : (
+                                <div className={`${mobileVideoSources ? "hidden md:block" : ""} overflow-hidden shadow-md md:shadow-2xl md:border md:border-gray-200 bg-gray-100 aspect-video relative`}>
+                                    <div id="details-yt-player" className="absolute inset-0 w-full h-full" />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

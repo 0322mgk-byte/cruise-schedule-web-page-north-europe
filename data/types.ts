@@ -199,7 +199,7 @@ export interface HeroData {
   description: string;
   mobileDescription?: string;
   videoSources: { src: string; type: string }[];
-  mobileVideoSrc?: string;
+  mobileVideoSources?: { src: string; type: string }[];
   posterImage?: string;
 }
 
@@ -222,6 +222,8 @@ export interface TripInfoData {
     arriveLocal: string;
     departLocal: string;
     arriveKorea: string;
+    arriveLayover?: string;
+    departLayover?: string;
     routeRegion: string;
     reservationStatus: string;
     reservationCountUnit: string;
@@ -288,6 +290,8 @@ export interface DetailsData {
     startSeconds: number;
     endSeconds: number;
   };
+  videoSources?: { src: string; type: string }[];
+  mobileVideoSources?: { src: string; type: string }[];
 }
 
 
