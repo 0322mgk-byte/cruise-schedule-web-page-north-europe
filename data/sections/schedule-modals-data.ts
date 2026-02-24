@@ -327,6 +327,7 @@ export const scheduleModalsData: ModalData[] = [
       "/sectrion6/day7/Bergen/bergen_1.webp",
       "/sectrion6/day7/Bergen/bergen_2.webp",
       "/sectrion6/day7/Bergen/bergen_3.webp",
+      "/sectrion6/day7/Bergen/bergen_4.webp",
     ],
     descriptions: [
       "노르웨이 제2의 도시이자 피오르의 관문, 베르겐.",
@@ -418,11 +419,7 @@ export const scheduleModalsData: ModalData[] = [
     type: "tourist-spot",
     id: "bergencathedral",
     title: "900년 역사의 베르겐 대성당 (BERGEN CATHEDRAL)",
-    images: [
-      "/sectrion6/day7/Bergen/cathedral_1.webp",
-      "/sectrion6/day7/Bergen/cathedral_2.webp",
-      "/sectrion6/day7/Bergen/cathedral_3.webp",
-    ],
+    images: [],
     descriptions: [
       "약 1150년경 노르웨이의 수호성인 성 올라프에게 봉헌된 교회로 시작된 베르겐 대성당은 약 900년의 역사를 간직한 노르웨이에서 가장 오래된 성당 중 하나입니다.",
       "수차례의 대화재를 겪으며 파괴와 재건을 반복했으며, 현재의 모습은 1880년대 대대적인 복원 공사를 거친 것입니다. 고딕 양식과 로마네스크 양식이 혼합된 건축미가 특징입니다.",
@@ -442,11 +439,7 @@ export const scheduleModalsData: ModalData[] = [
     type: "tourist-spot",
     id: "bergenhusfortress",
     title: "750년 역사의 베르겐 요새 (BERGENHUS FORTRESS)",
-    images: [
-      "/sectrion6/day7/Bergen/fortress_1.webp",
-      "/sectrion6/day7/Bergen/fortress_2.webp",
-      "/sectrion6/day7/Bergen/fortress_3.webp",
-    ],
+    images: [],
     descriptions: [
       "베르겐 항구 입구에 자리한 베르겐후스 요새는 노르웨이에서 가장 오래되고 보존 상태가 좋은 석조 요새 중 하나로, 750년이 넘는 역사를 간직하고 있습니다.",
       "요새의 핵심 건물인 호콘왕의 홀은 1247~1261년 호콘 호콘손 왕이 왕실 연회장으로 건설한 것이며, 1560년대에 증축된 로젠크란츠 탑은 방어용 탑으로 왕실 거주 공간과 감옥이 함께 있던 독특한 구조입니다.",
@@ -569,6 +562,7 @@ export const scheduleModalsData: ModalData[] = [
       "/sectrion6/day3/costa_diadema_1.webp",
       "/sectrion6/day3/costa_diadema_2.webp",
       "/sectrion6/day3/costa_diadema_3.webp",
+      "/sectrion6/day3/costa_diadema_4.webp",
     ],
     descriptions: [
       "코스타 크루즈의 플래그십 선박, 코스타 디아데마.",
@@ -594,6 +588,7 @@ export const scheduleModalsData: ModalData[] = [
       "/sectrion6/day5/day5_1.webp",
       "/sectrion6/day5/day5_2.webp",
       "/sectrion6/day5/day5_3.webp",
+      "/sectrion6/day5/day5_4.webp",
     ],
     descriptions: [
       "오늘은 종일 해상에서 보내는 날입니다. 코스타 디아데마의 다양한 시설을 마음껏 즐겨보세요.",
@@ -615,6 +610,7 @@ export const scheduleModalsData: ModalData[] = [
       "/sectrion6/day5/day5_1.webp",
       "/sectrion6/day5/day5_2.webp",
       "/sectrion6/day5/day5_3.webp",
+      "/sectrion6/day5/day5_4.webp",
     ],
     descriptions: [
       "선내 자유시간: 수준 높은 무료 공연 관람 및 다채로운 부대시설 이용",

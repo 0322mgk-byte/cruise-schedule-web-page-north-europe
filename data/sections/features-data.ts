@@ -7,7 +7,7 @@ export const featuresData: FeaturesData = {
   rooms: [
     {
       name: "인사이드",
-      image: "/section3/section3-inside.jpg",
+      image: "/section4/inside.jpg",
       subtitle: "합리적인 가격의 인테리어룸",
       description: "가장 저렴한 가격의 객실인 인테리어룸은 합리적인 여행을 즐기기에 완벽한 장소입니다.",
       amenities: [
@@ -24,7 +24,7 @@ export const featuresData: FeaturesData = {
     },
     {
       name: "오션뷰",
-      image: "/section3/section3-o.jpg",
+      image: "/section4/esterna_1392x636.webp",
       subtitle: "푸른 바다를 품은 오션뷰 룸",
       description: "그림 같은 풍경과 자연 채광이 가득한 오션뷰 룸은 광활한 바다의 아름다운 경치를 자랑합니다.",
       amenities: [
@@ -42,7 +42,7 @@ export const featuresData: FeaturesData = {
     },
     {
       name: "발코니",
-      image: "/section3/section3-b.jpg",
+      image: "/section4/balcone_1392x636.webp",
       subtitle: "아름다운 바다를 한 눈에 볼 수 있는 야외 공간",
       description: "인상적인 바다 뷰를 자랑하는 이 객실은 바다가 한눈에 들어오는 프라이빗 발코니 공간을 제공합니다.",
       amenities: [
